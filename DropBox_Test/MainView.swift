@@ -18,7 +18,7 @@ struct MainView: View {
                     Label("Home", systemImage: "house")
                 }
             
-            ProfileView(viewModel: ProfileViewModel(client: client))
+            FilesView(viewModel: FilesViewModel(client: client))
                 
                 .tabItem {
                     Label("Files", systemImage: "folder")

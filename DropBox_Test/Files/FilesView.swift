@@ -1,5 +1,5 @@
 //
-//  ProfileView.swift
+//  FilesView.swift
 //  DropBox_Test
 //
 //  Created by Alex Stepanov on 23.05.2023.
@@ -8,8 +8,8 @@
 import SwiftUI
 import SwiftyDropbox
 
-struct ProfileView: View {
-    @StateObject var viewModel: ProfileViewModel
+struct FilesView: View {
+    @StateObject var viewModel: FilesViewModel
     var nawTitle = "Files"
     
     var body: some View {
@@ -20,7 +20,7 @@ struct ProfileView: View {
                     FileCellView(viewModel: FileCellViewModel(fileName: fileMetadata.name, filePath: fileMetadata.pathLower)).padding(.vertical, 4)
                 case let folderMetadata as Files.FolderMetadata:
                     NavigationLink {
-                        ProfileView(viewModel: ProfileViewModel(client: viewModel.client, path: folderMetadata.id), nawTitle: folderMetadata.name)
+                        FilesView(viewModel: FilesViewModel(client: viewModel.client, path: folderMetadata.id), nawTitle: folderMetadata.name)
                     } label: {
                         HStack {
                             Image(systemName: "folder")

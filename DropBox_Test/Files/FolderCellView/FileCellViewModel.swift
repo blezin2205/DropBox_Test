@@ -33,9 +33,7 @@ class FileCellViewModel: ObservableObject {
     }
     
     func downloadDocument() {
-        guard let path = filePath, let directory = fileManager.getGeneralFolder() else {return}
-        let destURL = directory.appendingPathComponent(fileName)
-        
+        guard let path = filePath, let destURL = fileManager.getPathFor(name: fileName) else {return}
         let destination: (URL, HTTPURLResponse) -> URL = { temporaryURL, response in
             return destURL
         }

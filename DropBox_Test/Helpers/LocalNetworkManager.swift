@@ -11,47 +11,17 @@ class LocalFileManager {
     
     static let instance = LocalFileManager()
 
-    func getPathForFile(name: String) -> URL? {
-        guard
-            let path = FileManager
-                .default
-                .urls(for: .documentDirectory, in: .userDomainMask)
-                .first?
-                .appendingPathComponent(name) else {
-            print("Error getting path.")
-            return nil
-        }
-        
-        return path
+    func getPathFor(name: String?) -> URL? {
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let url = NSURL(fileURLWithPath: path)
+        return url.appendingPathComponent(name ?? "")
     }
     
     func checkIfFileExists(name: String) -> Bool {
-        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
-        let url = NSURL(fileURLWithPath: path)
-        if let pathComponent = url.appendingPathComponent(name) {
-            let filePath = pathComponent.path
-            let fileManager = FileManager.default
-            if fileManager.fileExists(atPath: filePath) {
-                return true
-            } else {
-                return false
-            }
+        if let path = getPathFor(name: name)?.path, FileManager.default.fileExists(atPath: path) {
+            return true
         } else {
             return false
         }
     }
-    
-    func getGeneralFolder() -> URL? {
-        guard
-            let path = FileManager
-                .default
-                .urls(for: .documentDirectory, in: .userDomainMask)
-                .first else {
-            print("Error getting path.")
-            return nil
-        }
-        
-        return path
-    }
-    
 }

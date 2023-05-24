@@ -25,7 +25,7 @@ struct HomeView: View {
                         ProgressView("Used space: \(Int(user.usedSize).byteSize) of \(Int(user.totalSize).byteSize)", value: user.usedSize, total: user.totalSize)
                             .padding()
                         
-                        if let myPath = contentViewModel.localManager.getGeneralFolder()?.absoluteString {
+                        if let myPath = contentViewModel.localManager.getPathFor(name: nil)?.path {
                             Text("Your DropBox folder destination:\n" + myPath)
                         }
                     }.padding()

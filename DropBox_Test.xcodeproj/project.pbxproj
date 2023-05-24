@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9736699C2A1CE86E00D53246 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9736699B2A1CE86E00D53246 /* HomeView.swift */; };
-		9736699E2A1D04B700D53246 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9736699D2A1D04B700D53246 /* ProfileView.swift */; };
-		973669A02A1D04C500D53246 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9736699F2A1D04C500D53246 /* ProfileViewModel.swift */; };
+		9736699E2A1D04B700D53246 /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9736699D2A1D04B700D53246 /* FilesView.swift */; };
+		973669A02A1D04C500D53246 /* FilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9736699F2A1D04C500D53246 /* FilesViewModel.swift */; };
 		973669A22A1D04D200D53246 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973669A12A1D04D200D53246 /* HomeViewModel.swift */; };
 		973669A62A1D06FF00D53246 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973669A52A1D06FF00D53246 /* MainView.swift */; };
 		97567EA82A1D0FC000330F30 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97567EA72A1D0FC000330F30 /* LoginView.swift */; };
@@ -26,8 +26,8 @@
 
 /* Begin PBXFileReference section */
 		9736699B2A1CE86E00D53246 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		9736699D2A1D04B700D53246 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		9736699F2A1D04C500D53246 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		9736699D2A1D04B700D53246 /* FilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
+		9736699F2A1D04C500D53246 /* FilesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesViewModel.swift; sourceTree = "<group>"; };
 		973669A12A1D04D200D53246 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		973669A52A1D06FF00D53246 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		97567EA72A1D0FC000330F30 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -65,14 +65,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		973669A42A1D050800D53246 /* Profile */ = {
+		973669A42A1D050800D53246 /* Files */ = {
 			isa = PBXGroup;
 			children = (
 				97567ED72A1DEBFA00330F30 /* FolderCellView */,
-				9736699D2A1D04B700D53246 /* ProfileView.swift */,
-				9736699F2A1D04C500D53246 /* ProfileViewModel.swift */,
+				9736699D2A1D04B700D53246 /* FilesView.swift */,
+				9736699F2A1D04C500D53246 /* FilesViewModel.swift */,
 			);
-			path = Profile;
+			path = Files;
 			sourceTree = "<group>";
 		};
 		97567EAB2A1D0FCE00330F30 /* Login */ = {
@@ -128,7 +128,7 @@
 				97567EAB2A1D0FCE00330F30 /* Login */,
 				973669A52A1D06FF00D53246 /* MainView.swift */,
 				973669A32A1D04F000D53246 /* Home */,
-				973669A42A1D050800D53246 /* Profile */,
+				973669A42A1D050800D53246 /* Files */,
 				FA50A7F12A1C0F83002A5BBB /* Assets.xcassets */,
 				FA50A7F32A1C0F83002A5BBB /* Preview Content */,
 			);
@@ -220,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97567EDE2A1E02C300330F30 /* LocalNetworkManager.swift in Sources */,
-				9736699E2A1D04B700D53246 /* ProfileView.swift in Sources */,
+				9736699E2A1D04B700D53246 /* FilesView.swift in Sources */,
 				973669A62A1D06FF00D53246 /* MainView.swift in Sources */,
 				973669A22A1D04D200D53246 /* HomeViewModel.swift in Sources */,
 				9736699C2A1CE86E00D53246 /* HomeView.swift in Sources */,
@@ -229,7 +229,7 @@
 				FA50A7F02A1C0F80002A5BBB /* ContentView.swift in Sources */,
 				FA50A7EE2A1C0F80002A5BBB /* DropBox_TestApp.swift in Sources */,
 				97567EA82A1D0FC000330F30 /* LoginView.swift in Sources */,
-				973669A02A1D04C500D53246 /* ProfileViewModel.swift in Sources */,
+				973669A02A1D04C500D53246 /* FilesViewModel.swift in Sources */,
 				97567EAA2A1D0FCA00330F30 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

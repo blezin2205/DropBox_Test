@@ -1,5 +1,5 @@
 //
-//  ProfileViewModel.swift
+//  FilesViewModel.swift
 //  DropBox_Test
 //
 //  Created by Alex Stepanov on 23.05.2023.
@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftyDropbox
 
-class ProfileViewModel: ObservableObject {
+class FilesViewModel: ObservableObject {
     
     let client: DropboxClient
     @Published var files = [Files.Metadata]()
