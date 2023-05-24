@@ -41,6 +41,7 @@
 		FA50A7F12A1C0F83002A5BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA50A7F42A1C0F83002A5BBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA50A7FE2A1C0FF8002A5BBB /* DropBox-Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DropBox-Test-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FA71B87F2A1E7A3400535C5C /* DropBox_Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DropBox_Test.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +120,7 @@
 		FA50A7EC2A1C0F80002A5BBB /* DropBox_Test */ = {
 			isa = PBXGroup;
 			children = (
+				FA71B87F2A1E7A3400535C5C /* DropBox_Test.entitlements */,
 				FA50A7FE2A1C0FF8002A5BBB /* DropBox-Test-Info.plist */,
 				FA50A7ED2A1C0F80002A5BBB /* DropBox_TestApp.swift */,
 				FA50A7EF2A1C0F80002A5BBB /* ContentView.swift */,
@@ -354,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DropBox_Test/DropBox_Test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DropBox_Test/Preview Content\"";
@@ -384,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DropBox_Test/DropBox_Test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DropBox_Test/Preview Content\"";

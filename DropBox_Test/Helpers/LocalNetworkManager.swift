@@ -26,9 +26,19 @@ class LocalFileManager {
     }
     
     func checkIfFileExists(name: String) -> Bool {
-        let path = getPathForFile(name: name)?.absoluteString ?? ""
-        print(path)
-        return FileManager.default.fileExists(atPath: path)
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let url = NSURL(fileURLWithPath: path)
+        if let pathComponent = url.appendingPathComponent(name) {
+            let filePath = pathComponent.path
+            let fileManager = FileManager.default
+            if fileManager.fileExists(atPath: filePath) {
+                return true
+            } else {
+                return false
+            }
+        } else {
+            return false
+        }
     }
     
     func getGeneralFolder() -> URL? {
